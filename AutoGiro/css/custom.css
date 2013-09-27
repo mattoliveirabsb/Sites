@@ -1,0 +1,263 @@
+/* line 10, ../sass/custom.scss */
+body {
+  background: url("../imagens/body.jpg") repeat-x;
+}
+
+/* line 14, ../sass/custom.scss */
+strong {
+  font-weight: 700;
+}
+
+/* line 18, ../sass/custom.scss */
+#barOrange {
+  background: #e61b23;
+  width: 100%;
+  height: 10px;
+}
+
+/** formata elementos que tem backgrounds parallax **/
+/* line 24, ../sass/custom.scss */
+.bgParallax {
+  font-family: "Raleway", sans-serif;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+  position: relative;
+  min-height: 100%;
+  background-position: 50% 0;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+/** Formata o article que vai o texto **/
+/* line 40, ../sass/custom.scss */
+.bgParallax article {
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20% 0 0;
+}
+
+/** formata texto **/
+/* line 48, ../sass/custom.scss */
+article h1 {
+  font-size: 40px;
+}
+
+/* line 49, ../sass/custom.scss */
+article p {
+  line-height: 30px;
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+/* line 50, ../sass/custom.scss */
+article p a {
+  color: #FFF;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+/* line 53, ../sass/custom.scss */
+.barWhite {
+  background: #fff;
+  width: 100%;
+  height: 175px;
+}
+
+/* line 59, ../sass/custom.scss */
+#logomarca {
+  background: url("../imagens/logomarca.png");
+  width: 235px;
+  height: 63px;
+  margin-top: 30px;
+}
+
+/* line 66, ../sass/custom.scss */
+.menu {
+  margin-top: 55px;
+  font-weight: 400;
+}
+
+/* line 70, ../sass/custom.scss */
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active {
+  background: #e61b23 !important;
+  color: #ffffff !important;
+}
+
+/* line 74, ../sass/custom.scss */
+.navbar-default {
+  background: none !important;
+  border: none !important;
+}
+
+/* line 78, ../sass/custom.scss */
+.navbar-nav > li > a {
+  -webkit-transition: all 0.5s;
+  font-size: 16px;
+  color: #000 !important;
+  font-weight: 300;
+}
+
+/* line 84, ../sass/custom.scss */
+.navbar-nav > li active {
+  background: #e61b23;
+}
+
+/* line 88, ../sass/custom.scss */
+.navbar-nav > li > a:hover {
+  -webkit-transition: all 0.5s;
+}
+
+/* line 93, ../sass/custom.scss */
+.slideText {
+  background: url("../imagens/slideText.png");
+  background-size: 100;
+  width: 376px;
+  height: 131px;
+  margin-top: 90px;
+  max-width: 100%;
+}
+
+/* line 102, ../sass/custom.scss */
+#home {
+  height: 400px !important;
+}
+
+/* line 104, ../sass/custom.scss */
+#quemsomos {
+  background: #f50;
+  background-size: 100%;
+  background: #e61b23;
+  padding-top: 50px;
+  padding-bottom: 70px;
+  color: #fff;
+  font-size: 18px;
+}
+
+/* line 119, ../sass/custom.scss */
+.whiteTitle {
+  font-size: 56px;
+  color: #fff;
+  font-weight: 300;
+}
+
+/* line 124, ../sass/custom.scss */
+.blackTitle {
+  font-size: 56px;
+  color: #000;
+  font-weight: 300;
+}
+
+@-webkit-keyframes flutuando {
+  /* line 132, ../sass/custom.scss */
+  0% {
+    margin-left: 0;
+  }
+
+  /* line 135, ../sass/custom.scss */
+  50% {
+    margin-left: 5px;
+  }
+
+  /* line 138, ../sass/custom.scss */
+  100% {
+    margin-left: 10px;
+  }
+}
+
+/* line 146, ../sass/custom.scss */
+#flutuando {
+  -webkit-animation-name: flutuando;
+  -webkit-animation: flutuando 1s alternate linear infinite;
+  -moz-animation: flutuando 1s alternate linear infinite;
+  -o-animation: flutuando 1s alternate linear infinite;
+  animation: flutuando 1s alternate linear infinite;
+}
+
+/* line 155, ../sass/custom.scss */
+#agendamento {
+  background-size: 100%;
+  background: url("../imagens/body.jpg");
+  padding-top: 50px;
+  padding-bottom: 70px;
+  color: #fff;
+  font-size: 18px;
+}
+
+/* line 170, ../sass/custom.scss */
+#filiais {
+  background-size: 100%;
+  background: url("../imagens/body.jpg");
+  height: 500px;
+  color: #fff;
+  font-size: 18px;
+}
+
+/* line 184, ../sass/custom.scss */
+#contato {
+  background: #f50;
+  background-size: 100%;
+  background: #e61b23;
+  padding-top: 50px;
+  padding-bottom: 70px;
+  color: #fff;
+  font-size: 18px;
+}
+
+/* line 200, ../sass/custom.scss */
+#bg001 {
+  background-image: url("../imagens/bg001.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  height: 300px;
+}
+
+/* line 209, ../sass/custom.scss */
+#bg002 {
+  background-image: url("../imagens/bg002.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  height: 300px;
+}
+
+/* line 218, ../sass/custom.scss */
+#bg003 {
+  background-image: url("../imagens/bg003.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  height: 300px;
+}
+
+/* line 227, ../sass/custom.scss */
+#bg004 {
+  background-image: url("../imagens/bg004.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  height: 300px;
+}
+
+/* line 237, ../sass/custom.scss */
+.redbus a {
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  color: #ffffff;
+}
+
+/* line 244, ../sass/custom.scss */
+.redbus a:hover {
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  color: #450e11;
+  text-decoration: none !important;
+}
