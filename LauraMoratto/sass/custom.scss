@@ -1,0 +1,338 @@
+/*
+  VARIAVEIS
+*/
+
+$font:'Raleway', sans-serif;
+$fontTitle: 'Oswald', sans-serif;
+/*$fontTitle: 'Handlee', cursive;*/
+$bg: '../imagens/body.jpg';
+$back001: '../imagens/bg001.jpg';
+$back002: '../imagens/bg002.jpg';
+$back003: '../imagens/bg003.jpg';
+$back004: '../imagens/bg004.jpg';
+$back005: '../imagens/bg005.jpg';
+$logomarca:'../imagens/logomarca.png';
+$logoFooter:'../imagens/logoFooter.png';
+$header: '../imagens/header.jpg';
+$yellow: #ffd905;
+
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Handlee);
+
+/*
+  FONT MENU
+*/
+$fontMenu: 14px;
+
+body {
+  /*background: url($bg) repeat-x;*/
+  font-family: $font;
+}
+strong {
+  font-weight: 700;
+}
+
+.topo {
+  background: url($header);
+  width: 100%;
+  height: 120px;
+  
+}
+/** formata elementos que tem backgrounds parallax **/
+.bgParallax {
+  font-family: $font;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+  position: relative;
+  min-height: 100%;
+
+
+  background-position: 50% 0;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+
+/** Formata o article que vai o texto **/
+.bgParallax article {
+  width: 70%;
+  text-align: center;
+  margin:0 auto;
+  padding:20% 0 0;
+}
+
+/** formata texto **/
+article h1 {font-size:40px;}
+article p {line-height: 30px; font-size:20px; margin-top:15px;}
+article p a {color:#FFF; text-decoration:none; font-size:30px;}
+
+
+
+
+#logomarca  {
+  background: url($logomarca);
+  width: 235px;
+  height: 36px;
+  margin: 30px auto;
+}
+
+.fontTitle {
+  font-family: $fontTitle;
+  color: #000;
+  font-size: 72px;
+}
+
+.menu {
+  margin: -30px auto !important;
+  margin-bottom: 30px;
+  font-weight: 400;
+} 
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active  {
+  background: $yellow !important;
+  color: #ffffff !important;
+}
+.navbar-default {
+  background: none !important;
+  border: none !important;
+  text-align: center;
+
+}
+.navbar-nav > li > a {
+  /*-webkit-transition: all 0.5s;*/
+  font-size: $fontMenu !important;
+  text-transform: lowercase;
+  color: #000 !important;
+  font-weight: 300;
+}
+.navbar-nav > li active {
+  background: $yellow;
+}
+
+.navbar-nav > li > a:hover {
+ /* -webkit-transition: all 0.5s;*/
+  font-weight: 500;
+  border-bottom:2px solid #000; 
+}
+
+.slideText {
+  background: url("../imagens/slideText.png");
+  background-size: 100%;
+  width: 376px;
+  height: 131px;
+  margin-top: 90px;
+  max-width: 100%;
+}
+
+/*#home { height: 400px !important; }*/
+
+#quemsomos {
+
+  background-size: 100%;
+  //-webkit-box-shadow:-20px 0 20px 5px rgba(0,0,0,0.7);
+  //-moz-box-shadow:-20px 0 20px 5px rgba(0,0,0,0.7);
+  //-ms-box-shadow:-20px 0 20px 5px rgba(0,0,0,0.7);
+  //-o-box-shadow:-20px 0 20px 5px rgba(0,0,0,0.7);
+  //box-shadow:-20px 0 20px 5px rgba(0,0,0,0.7);
+  background: $yellow;
+  padding-top: 50px;
+  padding-bottom: 70px;
+  color: #000;
+  font-size: 18px;
+
+}
+.whiteTitle {
+  font-size: 56px;
+  color: #fff;
+  font-weight: 300;
+}
+.blackTitle {
+  font-size: 56px;
+  color: #000;
+  font-weight: 300;
+}
+
+@-webkit-keyframes flutuando {
+
+  0% {
+    margin-left:0;
+  }
+  50% {
+    margin-left:5px;
+  }
+  100% {
+    margin-left:10px;
+  }
+
+
+
+}
+
+#flutuando {
+   -webkit-animation-name: flutuando;
+  -webkit-animation: flutuando 1s alternate linear infinite;
+  -moz-animation: flutuando 1s alternate linear infinite;
+  -o-animation: flutuando 1s alternate linear infinite;
+  animation: flutuando 1s alternate linear infinite;
+
+}
+
+#tendencias {
+  background-size: 100%;
+  //-webkit-box-shadow:-20px 0 20px 5px rgba(0,0,0,0.7);
+  //-moz-box-shadow:-20px 0 20px 5px rgba(0,0,0,0.7);
+  //-ms-box-shadow:-20px 0 20px 5px rgba(0,0,0,0.7);
+  //-o-box-shadow:-20px 0 20px 5px rgba(0,0,0,0.7);
+  //box-shadow:-20px 0 20px 5px rgba(0,0,0,0.7);
+  background: url($bg) repeat-x #ffffff;
+  padding-top: 50px;
+  padding-bottom: 70px;
+  color: #000;
+  font-size: 14px;
+
+}
+
+#tendencias h2 {
+  font-family: $font;
+  font-size: 28px;
+  color: #000;
+  font-weight: 300px;
+}
+
+#tendencias img {
+  webkit-transition: all 0.6s linear;-moz-transition: all 0.6s linear;transition: all 0.6s linear;
+  -webkit-filter: g   nrayscale(100%);z-index: -99px;
+  border:4px solid $yellow;
+}
+
+#tendencias img:hover {
+  -webkit-transition: all 0.6s linear;-moz-transition: all 0.6s linear;transition: all 0.6s linear;
+  -webkit-filter: grayscale(0%);
+}
+
+#colecao {
+  background-size: 100%;
+  //-webkit-box-shadow:-20px 0 20px 5px rgba(0,0,0,0.7);
+  //-moz-box-shadow:-20px 0 20px 5px rgba(0,0,0,0.7);
+  //-ms-box-shadow:-20px 0 20px 5px rgba(0,0,0,0.7);
+  //-o-box-shadow:-20px 0 20px 5px rgba(0,0,0,0.7);
+  //box-shadow:-20px 0 20px 5px rgba(0,0,0,0.7);
+  background: $yellow ;
+  color: #000;
+  font-size: 14px;
+
+}
+#colecao img {
+  webkit-transition: all 0.6s linear;-moz-transition: all 0.6s linear;transition: all 0.6s linear;
+  -webkit-filter: g   nrayscale(100%);z-index: -99px;
+  border:4px solid #fff;
+}
+
+#colecao img:hover {
+  -webkit-transition: all 0.6s linear;-moz-transition: all 0.6s linear;transition: all 0.6s linear;
+  -webkit-filter: grayscale(0%);
+}
+
+#marcas {
+  background-size: 100%;
+  //-webkit-box-shadow:-20px 0 20px 5px rgba(0,0,0,0.7);
+  //-moz-box-shadow:-20px 0 20px 5px rgba(0,0,0,0.7);
+  //-ms-box-shadow:-20px 0 20px 5px rgba(0,0,0,0.7);
+  //-o-box-shadow:-20px 0 20px 5px rgba(0,0,0,0.7);
+  //box-shadow:-20px 0 20px 5px rgba(0,0,0,0.7);
+  background: url($bg) repeat-x #ffffff;
+  padding-top: 50px;
+  padding-bottom: 70px;
+  color: #000;
+  font-size: 14px;
+
+}
+
+#contato {
+  background: #f50;
+  background-size: 100%;
+  //-webkit-box-shadow:-20px 0 20px 5px rgba(0,0,0,0.7);
+  //-moz-box-shadow:-20px 0 20px 5px rgba(0,0,0,0.7);
+  //-ms-box-shadow:-20px 0 20px 5px rgba(0,0,0,0.7);
+  //-o-box-shadow:-20px 0 20px 5px rgba(0,0,0,0.7);
+  //box-shadow:-20px 0 20px 5px rgba(0,0,0,0.7);
+  background: $yellow;
+  padding-top: 50px;
+  padding-bottom: 70px;
+  color: #fff;
+  font-size: 18px;
+
+}
+
+#bg001 {
+  background-image: url($back001);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  height: 400px;
+}
+
+#bg002 {
+  background-image: url($back002);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  height: 400px;
+}
+
+#bg003 {
+  background-image: url($back003);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  height: 400px;
+}
+
+#bg004 {
+  background-image: url($back004);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  height: 400px;
+}
+
+#bg005 {
+  background-image: url($back005);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  height: 400px;
+}
+
+.redbus a {
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  color: #ffffff;
+
+}
+.redbus a:hover {
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  color: #450e11;
+  text-decoration: none !important;
+
+}
+
+
+//#teste01 {
+//  background: url($back001);
+//  background-size: cover;
+//  -webkit-box-shadow:-20px 0 20px 5px rgba(0,0,0,0.7);
+//  -moz-box-shadow:-20px 0 20px 5px rgba(0,0,0,0.7);
+//  -ms-box-shadow:-20px 0 20px 5px rgba(0,0,0,0.7);
+//  -o-box-shadow:-20px 0 20px 5px rgba(0,0,0,0.7);
+//  box-shadow:-20px 0 20px 5px rgba(0,0,0,0.7);
+//}
