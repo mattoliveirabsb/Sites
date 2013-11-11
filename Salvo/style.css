@@ -1,0 +1,191 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300);
+* {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+  	-webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+  	-webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+ 	-webkit-tap-highlight-color: transparent; /* For some Androids */ 	
+  	-webkit-user-select: none; 
+    -webkit-overflow-scrolling:touch;
+}
+body {
+    font-size:100%;
+    /*
+        padding:20px;
+        margin:20px;
+    */
+}
+
+/*
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+*/
+
+.bgParallax {
+	color:#FFF;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+	min-height: 100%;
+	background-position: 50% 0;
+	background-repeat: repeat;
+	background-attachment: fixed;
+}
+
+.titulo-pages {
+    font-family: 'Oswald', sans-serif !important;
+    font-size:110px;
+    text-transform:uppercase;
+}
+
+#back001 {
+    background: url("imagens/back001.jpg") center center;
+    background-size:cover;
+    width:100%;
+    height:700px;
+}
+
+#back002 {
+    background: url("imagens/back002.jpg") center center;
+   
+    width:100%;
+    height:800px;
+    
+    font-family: 'Oswald', sans-serif !important;
+    font-size:18px;
+    text-align:justify;
+    margin-top:-20px;
+}
+
+#back003 { 
+    background-image: url("imagens/back003.jpg"); 
+    background-size: 100%; 
+    height:700px; 
+    padding-bottom:40px;
+}
+
+#back004 { 
+    background-image: url("imagens/back004.jpg"); 
+    width: 100%; 
+    height:600px; 
+    padding-bottom:40px;
+}
+
+#back005 { 
+    background-image: url("imagens/back005.jpg"); 
+    width: 100%; 
+    height:600px; 
+    padding-bottom:40px;
+}
+
+#back006 { 
+    background-image: url("imagens/back006.jpg"); 
+    width: 100%; 
+    height:600px; 
+    padding-bottom:40px;
+}
+
+#back007 { 
+    background-image: url("imagens/back007.jpg"); 
+    width: 100%; 
+    height:600px; 
+    padding-bottom:40px;
+}
+
+
+.logomarca {
+    margin:0px auto;
+    padding:70px;
+}
+    /* QUANDO FOR SMARTPHONE WIDE E PHONE  */
+    @media (max-width: 480px) { 
+        .logomarca {
+            position:relative;
+            top:50px;
+            padding:20px;
+        }
+    }
+
+.navbar-default {
+    background: none !important;
+    border: 1px solid #fff !important;
+    font-family: 'Oswald', sans-serif !important;
+    color:#fff !important;
+    text-transform:uppercase;
+    width:880px;
+    margin:10px auto;
+}
+
+.navbar-nav > li > a {
+    color: #fff !important;
+    font-size: 22px;
+}
+
+.navbar-brand {
+    display:none;
+}
+
+    /* QUANDO FOR SMARTPHONE WIDE E PHONE  */
+    @media (max-width: 480px) { 
+        .navbar-default {
+            background: rgba(255,255,255,0.9) !important;
+            border: #fff !important;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+            position:relative;
+            top:80px;
+            width:100%;
+        }   
+        .navbar-brand {
+            display:block;
+        }
+        .navbar-nav > li > a {
+            color: #000 !important;
+            font-size:16px;
+        }
+    }
+
+.nav-tabs > li > a {
+    color: #fff;
+    font-family: 'Oswald', sans-serif !important;
+    font-size:32px;
+    border-radius:10%;
+    border: none !important;
+}
+
+.nav-tabs > li > a:hover {
+    background:#ffcc00;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    border-radius: 10%;  
+    background:#ffcc00;
+    color:#fff;
+}
+
+.nav-tabs {
+    border-bottom: none !important;
+}
+
+.agenda {
+    width:940px;
+    margin:0 auto;
+    max-width:100%;
+}
+.img-border {
+    border:4px solid #fff;
+}
+
+    @media (max-width: 480px) { 
+        .nav-tabs {
+            padding:10px;
+            text-align:center;
+        }
+        .centered {
+            text-align:center;
+        }   
+    }
+
+.scrollup { width: 40px; height: 40px; text-indent: -9999px; opacity: 0.8; position: fixed; bottom: 50px; right: 100px; display: none; background: url("http://gazpo.com/downloads/tutorials/jquery/scrolltop/icon_top.png") no-repeat; }
